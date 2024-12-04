@@ -1,0 +1,207 @@
+.stats{
+    width: 100%;
+    margin-top: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.stats > div {
+    padding: 20px;
+    background-color: #575D5E;
+    color: #FACBA4;
+    border: 1px solid #212529;
+    border-radius: 6px;
+}
+
+.stats > div > h2{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.stats > div > p{
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.items{
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.items h1{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    color: #2D3436;
+}
+
+.items-container{
+    margin: 30px 0px;
+    width: 65%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 20px;
+}
+
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0px;
+    width: 100%;
+    height: 360px;
+    backdrop-filter: blur(10px);
+    background-color: #ffd38033;
+    border-radius: 7px;
+    border: 1px solid rgba(0, 0, 0, 0.175);
+    color: #212529;
+}
+
+.card > .badge{
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    height: 20px;
+    background-color: #DC3545;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.card > img{
+    width: 90%;
+    height: 165px;
+    object-fit: cover;
+    margin-left: 5%;
+    border-radius: 7px;
+}
+
+.details{
+    margin-left: 10%;
+}
+
+.details > h2{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.actions {
+    margin-top: 10px;
+}
+
+.actions span{
+    margin-right: 10px;
+}
+
+.actions .not-in-stock{
+    font-size: 12.5px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.actions i{
+    margin-right: 10px;
+    transition: 0.05s;
+}
+
+.actions i:hover{
+    scale: 1.1;
+}
+
+.add-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-item button {
+    padding: 10px;
+    margin: 0px 0px 10px 0px;
+    border-radius: 7px;
+    background-color: #2D3436;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #F9CAA3;
+}
+
+.modal{
+    width: 35%;
+    height: 72vh;
+    position: fixed;
+    left: 50%;
+    top: 14vh;
+    transform: translateX(-50%);
+    background-color: rgba(87, 93, 94, 1);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 1;
+    color: #F9CAA3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal > h2{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.modal > form{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.modal > form > input{
+    width: 90%;
+    height: 30px;
+    border: none;
+    border-radius: 7px;
+    padding: 10px;
+    outline: none;
+}
+
+#addModal > form > input[type="submit"]{
+    width: 20%;
+}
+
+#editModal > form > input[type="submit"]{
+    width: 27%;
+}
+
+.modal > form > input[type="submit"]{
+    background-color: #2D3436;
+    color: #F9CAA3;
+    padding: 0px;
+}
+
+.modal > .close-btn{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 20px;
+}
+
+.hide{
+    display: none !important;
+}
